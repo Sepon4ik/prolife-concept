@@ -968,6 +968,65 @@ footer {
 }
 .monitor-sec .monitor-inner { position: relative; z-index: 1; }
 
+
+/* ── SMOOTH SCROLL ── */
+html { scroll-behavior: smooth; }
+
+/* ── SECTION FADE + SLIDE ON SCROLL ── */
+.rv {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity .75s cubic-bezier(.22,1,.36,1), transform .75s cubic-bezier(.22,1,.36,1);
+}
+.rv.on { opacity: 1; transform: none; }
+.d1{transition-delay:.08s} .d2{transition-delay:.16s} .d3{transition-delay:.24s} .d4{transition-delay:.32s}
+
+/* ── PARALLAX SECTIONS (subtle bg shift) ── */
+.about-sec::before,
+.tech-sec::before,
+.monitor-sec::before,
+.init-sec::before {
+  transition: background-position .1s linear;
+  will-change: background-position;
+}
+
+/* ── NAV SHRINK ON SCROLL ── */
+nav {
+  transition: height .3s ease, background .3s, box-shadow .3s;
+}
+nav.scrolled {
+  height: 48px;
+  box-shadow: 0 2px 20px rgba(0,0,0,.08);
+}
+
+/* ── PRODUCT CARD HOVER LIFT ── */
+.prod-card {
+  transition: transform .4s cubic-bezier(.22,1,.36,1), box-shadow .4s;
+}
+.prod-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 32px rgba(0,0,0,.12), 0 32px 80px rgba(0,0,0,.10);
+}
+
+/* ── TECH CARD HOVER ── */
+.tc {
+  transition: background .3s, transform .35s cubic-bezier(.22,1,.36,1);
+}
+.tc:hover {
+  transform: translateY(-3px);
+}
+
+/* ── SCROLL PROGRESS BAR ── */
+#scroll-progress {
+  position: fixed;
+  top: 0; left: 0;
+  height: 2px;
+  background: var(--red);
+  z-index: 9999;
+  width: 0%;
+  transition: width .1s linear;
+}
+
 </style>
 </head>
 <body>
@@ -1756,6 +1815,57 @@ frame();
     const x = e.pageX - strip.offsetLeft;
     strip.scrollLeft = scrollLeft - (x - startX) * 1.4;
   });
+})();
+
+
+/* ── SCROLL EFFECTS ── */
+(function() {
+  // Progress bar
+  const bar = document.createElement('div');
+  bar.id = 'scroll-progress';
+  document.body.prepend(bar);
+
+  // Nav shrink
+  const nav = document.getElementById('nav');
+
+  // Parallax targets
+  const parallaxSections = [
+    { el: document.querySelector('.about-sec'),   speed: 0.3 },
+    { el: document.querySelector('.tech-sec'),    speed: 0.25 },
+    { el: document.querySelector('.monitor-sec'), speed: 0.2 },
+    { el: document.querySelector('.init-sec'),    speed: 0.35 },
+  ].filter(s => s.el);
+
+  let ticking = false;
+
+  function onScroll() {
+    if (ticking) return;
+    ticking = true;
+    requestAnimationFrame(() => {
+      const sy = window.scrollY;
+      const maxScroll = document.body.scrollHeight - window.innerHeight;
+
+      // Progress bar
+      bar.style.width = (sy / maxScroll * 100) + '%';
+
+      // Nav shrink
+      if (nav) nav.classList.toggle('scrolled', sy > 60);
+
+      // Parallax — shift background-position-y
+      parallaxSections.forEach(({ el, speed }) => {
+        const rect = el.getBoundingClientRect();
+        const offset = (window.innerHeight - rect.top) * speed;
+        el.style.backgroundPositionY = offset + 'px';
+        // Also shift ::before via CSS custom property
+        el.style.setProperty('--py', offset + 'px');
+      });
+
+      ticking = false;
+    });
+  }
+
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
 })();
 
 </script>
