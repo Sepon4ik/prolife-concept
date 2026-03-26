@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Prolife — Swiss Medical Technology</title>
+<title>Prolife â Swiss Medical Technology</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
 <style>
@@ -36,7 +36,7 @@ body {
   overflow-x: hidden;
 }
 
-/* ─── NOISE TEXTURE ─── */
+/* âââ NOISE TEXTURE âââ */
 body::before {
   content: '';
   position: fixed; inset: 0; z-index: 0;
@@ -45,7 +45,7 @@ body::before {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
 }
 
-/* ─── NAV ─── */
+/* âââ NAV âââ */
 nav {
   position: fixed; top: 0; left: 0; right: 0; z-index: 200;
   height: 58px;
@@ -84,7 +84,7 @@ nav {
 }
 .nav-cta:hover { background: var(--red); }
 
-/* ─── HERO — full bleed ─── */
+/* âââ HERO â full bleed âââ */
 .hero {
   position: relative; overflow: hidden;
   height: 100svh; min-height: 620px;
@@ -103,7 +103,7 @@ nav {
 }
 @keyframes slowZoom { from { transform: scale(1.03); } to { transform: scale(1.08); } }
 
-/* Fallback solid — shows if image doesn't load */
+/* Fallback solid â shows if image doesn't load */
 .hero-bg-fallback {
   position: absolute; inset: 0; z-index: 1;
   background: linear-gradient(135deg, #1A1814 0%, #2C2820 40%, var(--red) 120%);
@@ -163,7 +163,7 @@ nav {
 }
 .btn-ghost-w:hover { color: #fff; border-color: rgba(255,255,255,.55); }
 
-/* Hero right — floating card */
+/* Hero right â floating card */
 .hero-right {
   display: flex; justify-content: flex-end; align-items: flex-end;
   padding-bottom: .5rem;
@@ -207,7 +207,7 @@ nav {
   color: rgba(255,255,255,.45);
 }
 
-/* ─── INTRO BAND ─── */
+/* âââ INTRO BAND âââ */
 .intro-band {
   background: var(--ink); padding: 0 3rem;
   display: flex; align-items: stretch; overflow: hidden;
@@ -231,7 +231,7 @@ nav {
 }
 .ib-label { font-size: .65rem; color: rgba(255,255,255,.4); letter-spacing: .06em; margin-top: .15rem; }
 
-/* ─── MARQUEE ─── */
+/* âââ MARQUEE âââ */
 .mq {
   overflow: hidden; background: var(--red); padding: .6rem 0;
 }
@@ -246,7 +246,7 @@ nav {
 .mq-dot { width: 3px; height: 3px; border-radius: 50%; background: rgba(255,255,255,.4); }
 @keyframes mq { from { transform: translateX(0); } to { transform: translateX(-50%); } }
 
-/* ─── SECTION HELPERS ─── */
+/* âââ SECTION HELPERS âââ */
 .sec { padding: 7rem 3rem; position: relative; z-index: 1; }
 .tag {
   display: inline-flex; align-items: center; gap: .55rem; margin-bottom: 1.25rem;
@@ -273,7 +273,7 @@ nav {
 .rv.on { opacity: 1; transform: none; }
 .d1{transition-delay:.1s} .d2{transition-delay:.2s} .d3{transition-delay:.3s} .d4{transition-delay:.4s}
 
-/* ─── STICKY PRODUCT ─── */
+/* âââ STICKY PRODUCT âââ */
 .product-sec {
   background: var(--cream);
   padding: 5rem 3rem;
@@ -300,7 +300,7 @@ nav {
   box-shadow: 0 1px 8px rgba(0,0,0,.10);
 }
 
-/* Product card — two column */
+/* Product card â two column */
 .prod-card {
   max-width: 1300px; margin: 0 auto;
   display: grid; grid-template-columns: 1fr 1fr;
@@ -357,7 +357,7 @@ nav {
     0 8px 24px rgba(0,0,0,0.12);
 }
 
-/* Specular highlight — top shine line */
+/* Specular highlight â top shine line */
 .pc-glass::before {
   content: '';
   position: absolute; top: 0; left: 10%; right: 10%; height: 1px;
@@ -469,7 +469,7 @@ nav {
 }
 .pc-action:hover { background: var(--red); transform: translateY(-1px); }
 
-/* ─── GALLERY SECTION ─── */
+/* âââ GALLERY SECTION âââ */
 .gallery-sec {
   background: var(--ink);
   padding: 0;
@@ -489,7 +489,7 @@ nav {
 .gallery-sec .tag-txt { color: #F9A9A5; }
 .gallery-sec .tag-line { background: #F9A9A5; }
 
-/* ── EDITORIAL GRID ── */
+/* ââ EDITORIAL GRID ââ */
 .gal-editorial {
   display: grid;
   grid-template-columns: 55fr 22fr 23fr;
@@ -497,7 +497,7 @@ nav {
   gap: 3px;
 }
 
-/* Hero — spans both rows */
+/* Hero â spans both rows */
 .ge-hero {
   grid-column: 1;
   grid-row: 1 / 3;
@@ -596,7 +596,7 @@ nav {
   letter-spacing: .04em;
 }
 
-/* Bottom strip — horizontal scroll */
+/* Bottom strip â horizontal scroll */
 .gal-strip {
   display: flex;
   overflow-x: auto; overflow-y: hidden;
@@ -646,7 +646,7 @@ nav {
 }
 .zoom-close-btn:hover { background: rgba(255,255,255,.2); }
 
-/* ─── TECH SECTION ─── */
+/* âââ TECH SECTION âââ */
 .tech-sec { background: var(--cream2); padding: 7rem 3rem; }
 .tech-grid {
   display: grid; grid-template-columns: repeat(3, 1fr);
@@ -670,7 +670,7 @@ nav {
 .tc-title { font-family: var(--serif); font-size: 1.1rem; font-weight: 400; color: var(--ink); margin-bottom: .45rem; }
 .tc-desc { font-size: .82rem; color: var(--mid); line-height: 1.8; font-weight: 300; }
 
-/* ─── LIVE MONITOR ─── */
+/* âââ LIVE MONITOR âââ */
 .monitor-sec {
   background: var(--cream); padding: 7rem 3rem;
   border-top: 1px solid var(--cream3);
@@ -728,7 +728,7 @@ nav {
 .mc-ecg-lbl { font-size: .56rem; font-weight: 600; color: var(--pale); text-transform: uppercase; letter-spacing: .08em; margin-bottom: .4rem; }
 #ecgc { display: block; width: 100%; }
 
-/* ─── INITIATIVE ─── */
+/* âââ INITIATIVE âââ */
 .init-sec {
   background: transparent; padding: 7rem 3rem;
   position: relative; overflow: hidden;
@@ -757,7 +757,7 @@ nav {
 .idot { position: absolute; width: 6px; height: 6px; border-radius: 50%; background: #F9A9A5; box-shadow: 0 0 8px #F9A9A5; animation: idot 4s ease-in-out infinite; }
 @keyframes idot { 0%,100%{opacity:.25;transform:scale(1)} 50%{opacity:1;transform:scale(1.5)} }
 
-/* ─── FOOTER ─── */
+/* âââ FOOTER âââ */
 footer {
   background: var(--ink2); border-top: 1px solid rgba(255,255,255,.06);
   padding: 4.5rem 3rem 2.5rem;
@@ -787,9 +787,13 @@ footer {
 ::-webkit-scrollbar-track { background: var(--cream2); }
 ::-webkit-scrollbar-thumb { background: var(--cream3); border-radius: 3px; }
 
-/* ── HERO VIDEO BG ── */
+/* ââ HERO VIDEO BG ââ */
 .hero-bg-video {
   position: absolute; inset: 0; z-index: 0; overflow: hidden;
+  background:
+    linear-gradient(to bottom, rgba(26,24,20,.18) 0%, rgba(26,24,20,.30) 40%, rgba(26,24,20,.62) 100%),
+    url('https://www.prolife-health.com/public/images/products-list/BPM/px7-lifestyle-in-interior-23-(square-crop).jpg')
+    center / cover no-repeat;
 }
 .hero-bg-video::after {
   content: '';
@@ -805,10 +809,12 @@ footer {
   width: 100%; height: 100%;
   object-fit: cover; display: block;
   animation: slowZoom 18s ease-in-out infinite alternate;
+  opacity: 0;
+  transition: opacity .8s ease;
 }
 
 
-/* ═══ ABOUT SECTION ═══ */
+/* âââ ABOUT SECTION âââ */
 .about-sec {
   background: var(--cream2);
   padding: 7rem 3rem;
@@ -900,10 +906,10 @@ footer {
 
 
 
-/* ═══ SWISS BACKGROUND SECTIONS ═══ */
+/* âââ SWISS BACKGROUND SECTIONS âââ */
 
 
-/* ── About: Swiss valley ── */
+/* ââ About: Swiss valley ââ */
 .about-sec { position: relative; overflow: hidden; }
 .about-sec::before {
   content: '';
@@ -919,7 +925,7 @@ footer {
 .about-sec .about-inner,
 .about-sec .about-strip-wrap { position: relative; z-index: 1; }
 
-/* ── Tech: Alpine lake ── */
+/* ââ Tech: Alpine lake ââ */
 .tech-sec { position: relative; overflow: hidden; }
 .tech-sec::before {
   content: '';
@@ -932,7 +938,7 @@ footer {
 }
 .tech-sec > * { position: relative; z-index: 1; }
 
-/* ── Initiative: Alpine dusk ── */
+/* ââ Initiative: Alpine dusk ââ */
 .init-sec { position: relative; overflow: hidden; }
 .init-sec::before {
   content: '';
@@ -947,7 +953,7 @@ footer {
 }
 .init-sec .init-inner { position: relative; z-index: 2; }
 
-/* ── Monitor: Swiss morning meadow ── */
+/* ââ Monitor: Swiss morning meadow ââ */
 .monitor-sec { position: relative; overflow: hidden; }
 .monitor-sec::before {
   content: '';
@@ -981,7 +987,7 @@ footer {
   <a href="#contact" class="nav-cta">Contact</a>
 </nav>
 
-<!-- ═══ HERO ═══ -->
+<!-- âââ HERO âââ -->
 <section class="hero">
   <div class="hero-bg" style="display:none"></div>
   <div class="hero-bg-video">
@@ -995,14 +1001,14 @@ footer {
     <div class="hero-left">
       <div class="hero-label">
         <span class="label-dot"></span>
-        <span class="label-txt">Swiss Medical Technology · Est. 1998</span>
+        <span class="label-txt">Swiss Medical Technology Â· Est. 1998</span>
       </div>
       <h1 class="hero-h1">
         Your heart.<br>
         <em>Understood.</em>
       </h1>
       <p class="hero-sub">
-        Blood pressure monitors engineered in Switzerland — with AFibra® technology that detects atrial fibrillation before it becomes a crisis.
+        Blood pressure monitors engineered in Switzerland â with AFibraÂ® technology that detects atrial fibrillation before it becomes a crisis.
       </p>
       <div class="hero-btns">
         <a href="#products" class="btn-white">
@@ -1041,15 +1047,15 @@ footer {
   </div>
 </section>
 
-<!-- ═══ INTRO BAND ═══ -->
+<!-- âââ INTRO BAND âââ -->
 <div class="intro-band">
   <div class="ib-item">
     <div class="ib-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 12l4-8 4 8 4-12 4 12 4-8"/></svg></div>
-    <div><div class="ib-num">AFibra®</div><div class="ib-label">SMART Technology</div></div>
+    <div><div class="ib-num">AFibraÂ®</div><div class="ib-label">SMART Technology</div></div>
   </div>
   <div class="ib-item">
     <div class="ib-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
-    <div><div class="ib-num">1.5×</div><div class="ib-label">Faster with ComfortPro</div></div>
+    <div><div class="ib-num">1.5Ã</div><div class="ib-label">Faster with ComfortPro</div></div>
   </div>
   <div class="ib-item">
     <div class="ib-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
@@ -1064,22 +1070,22 @@ footer {
 <!-- MARQUEE -->
 <div class="mq">
   <div class="mq-track">
-    <div class="mq-item"><span>AFibra® SMART Technology</span><span class="mq-dot"></span></div>
+    <div class="mq-item"><span>AFibraÂ® SMART Technology</span><span class="mq-dot"></span></div>
     <div class="mq-item"><span>Swiss Precision Engineering</span><span class="mq-dot"></span></div>
     <div class="mq-item"><span>Stroke Prevention</span><span class="mq-dot"></span></div>
     <div class="mq-item"><span>2,000,000+ Devices</span><span class="mq-dot"></span></div>
     <div class="mq-item"><span>10-Year Warranty</span><span class="mq-dot"></span></div>
-    <div class="mq-item"><span>AIm · ComfortPro · IHB · Mesh</span><span class="mq-dot"></span></div>
-    <div class="mq-item"><span>AFibra® SMART Technology</span><span class="mq-dot"></span></div>
+    <div class="mq-item"><span>AIm Â· ComfortPro Â· IHB Â· Mesh</span><span class="mq-dot"></span></div>
+    <div class="mq-item"><span>AFibraÂ® SMART Technology</span><span class="mq-dot"></span></div>
     <div class="mq-item"><span>Swiss Precision Engineering</span><span class="mq-dot"></span></div>
     <div class="mq-item"><span>Stroke Prevention</span><span class="mq-dot"></span></div>
     <div class="mq-item"><span>2,000,000+ Devices</span><span class="mq-dot"></span></div>
     <div class="mq-item"><span>10-Year Warranty</span><span class="mq-dot"></span></div>
-    <div class="mq-item"><span>AIm · ComfortPro · IHB · Mesh</span><span class="mq-dot"></span></div>
+    <div class="mq-item"><span>AIm Â· ComfortPro Â· IHB Â· Mesh</span><span class="mq-dot"></span></div>
   </div>
 </div>
 
-<!-- ═══ STICKY PRODUCT SECTION ═══ -->
+<!-- âââ STICKY PRODUCT SECTION âââ -->
 <section class="product-sec" id="products">
 
   <!-- Intro -->
@@ -1088,7 +1094,7 @@ footer {
       <div class="tag rv"><span class="tag-line"></span><span class="tag-txt">Blood Pressure Monitors</span></div>
       <h2 class="h2 rv d1">Our <em>flagship</em><br>lineup.</h2>
     </div>
-    <p class="lead rv d2">From the AI-powered PX7 Premium to the clinically validated PA5 series — engineered for accuracy, comfort, and life-saving early detection.</p>
+    <p class="lead rv d2">From the AI-powered PX7 Premium to the clinically validated PA5 series â engineered for accuracy, comfort, and life-saving early detection.</p>
   </div>
 
   <!-- Tabs -->
@@ -1099,7 +1105,7 @@ footer {
     <button class="ptab" onclick="showProd(3,this)">PA2 Basic AD</button>
   </div>
 
-  <!-- ── PX7 Premium ── -->
+  <!-- ââ PX7 Premium ââ -->
   <div class="prod-card active rv" id="pc-0">
     <div class="pc-visual">
       <span class="pc-badge badge-flagship">Flagship</span>
@@ -1110,21 +1116,21 @@ footer {
     <div class="pc-info">
       <div class="pc-eyebrow">Model PX7 Premium</div>
       <div class="pc-name">AI Blood Pressure Monitor</div>
-      <p class="pc-desc">The most advanced Prolife device. Artificial intelligence personalises every measurement — calculating the optimal cuff inflation for your physiology, every single time.</p>
+      <p class="pc-desc">The most advanced Prolife device. Artificial intelligence personalises every measurement â calculating the optimal cuff inflation for your physiology, every single time.</p>
       <div class="pc-feats">
-        <span class="pf key"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 6l2-4 2 4 2-6 2 6 1-2"/></svg>AFibra® SMART</span>
+        <span class="pf key"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 6l2-4 2 4 2-6 2 6 1-2"/></svg>AFibraÂ® SMART</span>
         <span class="pf key"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 1L1 3.5l5 2.5 5-2.5L6 1z"/><path d="M1 8.5l5 2.5 5-2.5M1 6l5 2.5L11 6"/></svg>AIm Technology</span>
         <span class="pf">Intelligent Assistant</span>
         <span class="pf">ComfortPro</span>
         <span class="pf">IHB Technology</span>
-        <span class="pf">Conic cuff 22–45 cm</span>
-        <span class="pf">1 × 199 records</span>
+        <span class="pf">Conic cuff 22â45 cm</span>
+        <span class="pf">1 Ã 199 records</span>
         <span class="pf">AC Adapter included</span>
       </div>
       <div class="pc-specs">
-        <div class="pcs"><div class="pcs-k">Dimensions</div><div class="pcs-v">175 × 91.5 × 53.5 mm</div></div>
+        <div class="pcs"><div class="pcs-k">Dimensions</div><div class="pcs-v">175 Ã 91.5 Ã 53.5 mm</div></div>
         <div class="pcs"><div class="pcs-k">Weight</div><div class="pcs-v">288 g</div></div>
-        <div class="pcs"><div class="pcs-k">Power</div><div class="pcs-v">4×AAA + Adapter</div></div>
+        <div class="pcs"><div class="pcs-k">Power</div><div class="pcs-v">4ÃAAA + Adapter</div></div>
       </div>
       <a href="https://www.prolife-health.com/products/blood-pressure-monitors/prolife-px7-premium/" target="_blank" class="pc-action">
         Full details <svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h10M8 3l5 5-5 5"/></svg>
@@ -1132,7 +1138,7 @@ footer {
     </div>
   </div>
 
-  <!-- ── PA5 Comfort AF ── -->
+  <!-- ââ PA5 Comfort AF ââ -->
   <div class="prod-card rv" id="pc-1">
     <div class="pc-visual">
       <span class="pc-badge badge-bestseller">Best Seller</span>
@@ -1145,16 +1151,16 @@ footer {
       <div class="pc-name">Blood Pressure Monitor with AFib Detection</div>
       <p class="pc-desc">Detects atrial fibrillation even while the cuff inflates. Smart conic cuff for arms up to 45 cm. High-resolution display readable at any angle, day or night.</p>
       <div class="pc-feats">
-        <span class="pf key">AFibra® SMART</span>
+        <span class="pf key">AFibraÂ® SMART</span>
         <span class="pf">ComfortPro</span>
         <span class="pf">IHB Technology</span>
-        <span class="pf">Conic cuff 22–45 cm</span>
+        <span class="pf">Conic cuff 22â45 cm</span>
         <span class="pf">10-Year Warranty</span>
       </div>
       <div class="pc-specs">
-        <div class="pcs"><div class="pcs-k">Dimensions</div><div class="pcs-v">175 × 90 × 44 mm</div></div>
+        <div class="pcs"><div class="pcs-k">Dimensions</div><div class="pcs-v">175 Ã 90 Ã 44 mm</div></div>
         <div class="pcs"><div class="pcs-k">Weight</div><div class="pcs-v">267 g</div></div>
-        <div class="pcs"><div class="pcs-k">Memory</div><div class="pcs-v">1 × 199 records</div></div>
+        <div class="pcs"><div class="pcs-k">Memory</div><div class="pcs-v">1 Ã 199 records</div></div>
       </div>
       <a href="https://www.prolife-health.com/products/blood-pressure-monitors/prolife-pa5-comfort-af.html" target="_blank" class="pc-action">
         Full details <svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h10M8 3l5 5-5 5"/></svg>
@@ -1162,7 +1168,7 @@ footer {
     </div>
   </div>
 
-  <!-- ── PA5 Comfort ── -->
+  <!-- ââ PA5 Comfort ââ -->
   <div class="prod-card rv" id="pc-2">
     <div class="pc-visual">
       <span class="pc-badge badge-validated">ISO Validated</span>
@@ -1178,12 +1184,12 @@ footer {
         <span class="pf">ComfortPro</span>
         <span class="pf">IHB Technology</span>
         <span class="pf">ISO Validated</span>
-        <span class="pf">Conic cuff 22–42 cm</span>
+        <span class="pf">Conic cuff 22â42 cm</span>
         <span class="pf">10-Year Warranty</span>
       </div>
       <div class="pc-specs">
-        <div class="pcs"><div class="pcs-k">Cuff</div><div class="pcs-v">Conic M-L 22–42</div></div>
-        <div class="pcs"><div class="pcs-k">Memory</div><div class="pcs-v">1 × 199 records</div></div>
+        <div class="pcs"><div class="pcs-k">Cuff</div><div class="pcs-v">Conic M-L 22â42</div></div>
+        <div class="pcs"><div class="pcs-k">Memory</div><div class="pcs-v">1 Ã 199 records</div></div>
         <div class="pcs"><div class="pcs-k">Warranty</div><div class="pcs-v">10 years</div></div>
       </div>
       <a href="https://www.prolife-health.com/products/blood-pressure-monitors/prolife-pa5-comfort.html" target="_blank" class="pc-action">
@@ -1192,7 +1198,7 @@ footer {
     </div>
   </div>
 
-  <!-- ── PA2 Basic AD ── -->
+  <!-- ââ PA2 Basic AD ââ -->
   <div class="prod-card rv" id="pc-3">
     <div class="pc-visual">
       <span class="pc-badge badge-new">New</span>
@@ -1203,7 +1209,7 @@ footer {
     <div class="pc-info">
       <div class="pc-eyebrow">Model PA2 Basic AD</div>
       <div class="pc-name">Digital Blood Pressure Monitor</div>
-      <p class="pc-desc">Reliable monitoring for the whole household — two independent user profiles, standard M-L cuff, straightforward operation.</p>
+      <p class="pc-desc">Reliable monitoring for the whole household â two independent user profiles, standard M-L cuff, straightforward operation.</p>
       <div class="pc-feats">
         <span class="pf">IHB Technology</span>
         <span class="pf">2 User Profiles</span>
@@ -1211,8 +1217,8 @@ footer {
         <span class="pf">Standard M-L cuff</span>
       </div>
       <div class="pc-specs">
-        <div class="pcs"><div class="pcs-k">Cuff</div><div class="pcs-v">Standard M-L 22–42</div></div>
-        <div class="pcs"><div class="pcs-k">Memory</div><div class="pcs-v">2 × 120 records</div></div>
+        <div class="pcs"><div class="pcs-k">Cuff</div><div class="pcs-v">Standard M-L 22â42</div></div>
+        <div class="pcs"><div class="pcs-k">Memory</div><div class="pcs-v">2 Ã 120 records</div></div>
         <div class="pcs"><div class="pcs-k">Users</div><div class="pcs-v">2 profiles</div></div>
       </div>
       <a href="https://www.prolife-health.com/products/blood-pressure-monitors/prolife-pa2-basic-ad.html" target="_blank" class="pc-action">
@@ -1223,7 +1229,7 @@ footer {
 
 </section>
 
-<!-- ═══ ABOUT / TEAM PHOTO STRIP ═══ -->
+<!-- âââ ABOUT / TEAM PHOTO STRIP âââ -->
 <section class="about-sec" id="about">
   <div class="about-inner">
 
@@ -1233,7 +1239,7 @@ footer {
       <h2 class="h2 rv d1">From idea<br><em>to your home.</em></h2>
       <p class="about-quote rv d2">
         "We break the limits of what's possible and create something truly groundbreaking.
-        Listening to our customers and exceeding their expectations is what drives us —
+        Listening to our customers and exceeding their expectations is what drives us â
         and we love doing it."
       </p>
       <div class="about-facts rv d3">
@@ -1349,7 +1355,7 @@ footer {
   </div>
 </section>
 
-<!-- ═══ GALLERY ═══ -->
+<!-- âââ GALLERY âââ -->
 <section class="gallery-sec" id="gallery">
 
   <!-- Header -->
@@ -1358,13 +1364,13 @@ footer {
       <div class="tag rv"><span class="tag-line"></span><span class="tag-txt">Photo Gallery</span></div>
       <h2 class="h2 rv d1">Every detail of the <em>PX7 Premium.</em></h2>
     </div>
-    <p class="lead rv d2">Click any image to zoom. Use ← → to navigate. Includes the official product video.</p>
+    <p class="lead rv d2">Click any image to zoom. Use â â to navigate. Includes the official product video.</p>
   </div>
 
   <!-- Editorial grid -->
   <div class="gal-editorial">
 
-    <!-- HERO — big left -->
+    <!-- HERO â big left -->
     <div class="ge-hero rv" id="ge-hero"
       onclick="galZoom(0)"
       data-src="https://www.prolife-health.com/public/images/products-list/BPM/prolife-products-pade-px7-premium.jpg">
@@ -1372,7 +1378,7 @@ footer {
         src="https://www.prolife-health.com/public/images/products-list/BPM/prolife-products-pade-px7-premium.jpg"
         alt="PX7 Premium">
       <div class="ge-overlay">
-        <span class="ge-label">PX7 Premium · Flagship</span>
+        <span class="ge-label">PX7 Premium Â· Flagship</span>
       </div>
       <div class="ge-counter"><span id="ge-idx">1</span> / 8</div>
       <!-- Nav arrows on hero -->
@@ -1380,7 +1386,7 @@ footer {
       <button onclick="event.stopPropagation();galStep(1)"  style="position:absolute;right:.85rem;top:50%;transform:translateY(-50%);width:38px;height:38px;background:rgba(255,255,255,.12);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.18);border-radius:50%;color:#fff;font-size:20px;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:3">&#8250;</button>
     </div>
 
-    <!-- Top right 1 — video -->
+    <!-- Top right 1 â video -->
     <div class="ge-tr1 rv d1" onclick="galZoom(1)">
       <img src="https://www.prolife-health.com/public/images/products-list/BPM/px7-lifestyle-in-interior-23-(square-crop).jpg" alt="" loading="lazy">
       <div class="ge-vid-badge">
@@ -1390,19 +1396,19 @@ footer {
       <div class="ge-overlay"><span class="ge-label">Product Video</span></div>
     </div>
 
-    <!-- Top right 2 — lifestyle -->
+    <!-- Top right 2 â lifestyle -->
     <div class="ge-tr2 rv d2" onclick="galZoom(2)">
       <img src="https://www.prolife-health.com/public/images/products-list/BPM/px7-lifestyle-in-interior-n3-square-crop.jpg" alt="" loading="lazy">
       <div class="ge-overlay"><span class="ge-label">In the home</span></div>
     </div>
 
-    <!-- Bottom right 1 — detail -->
+    <!-- Bottom right 1 â detail -->
     <div class="ge-br1 rv d2" onclick="galZoom(3)">
       <img src="https://www.prolife-health.com/public/images/products-list/BPM/050-px7.jpg" alt="" loading="lazy">
       <div class="ge-overlay"><span class="ge-label">Device detail</span></div>
     </div>
 
-    <!-- Bottom right 2 — display -->
+    <!-- Bottom right 2 â display -->
     <div class="ge-br2 rv d3" onclick="galZoom(4)">
       <img src="https://www.prolife-health.com/public/images/products-list/BPM/060-px7.jpg" alt="" loading="lazy">
       <div class="ge-overlay"><span class="ge-label">Display</span></div>
@@ -1424,14 +1430,14 @@ footer {
 
 </section>
 <div class="zoom-ov" id="zoom-ov" onclick="closeZoom()">
-  <button class="zoom-close-btn" onclick="closeZoom()">✕</button>
+  <button class="zoom-close-btn" onclick="closeZoom()">â</button>
   <img id="zoom-img" src="" style="display:none" alt="">
   <video id="zoom-vid" muted loop playsinline autoplay style="display:none">
     <source id="zoom-vid-src" src="" type="video/mp4">
   </video>
 </div>
 
-<!-- ═══ TECH ═══ -->
+<!-- âââ TECH âââ -->
 <section class="tech-sec" id="tech">
   <div style="max-width:1300px;margin:0 auto">
     <div class="tag rv"><span class="tag-line"></span><span class="tag-txt">Proprietary Technologies</span></div>
@@ -1441,26 +1447,26 @@ footer {
     </div>
   </div>
   <div class="tech-grid">
-    <div class="tc rv"><div class="tc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 12l4-8 4 8 4-12 4 12 4-8"/></svg></div><div class="tc-num">01</div><div class="tc-title">AFibra® SMART</div><p class="tc-desc">Detects atrial fibrillation during cuff inflation — clinically validated, first of its kind for home use.</p></div>
-    <div class="tc rv d1"><div class="tc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4"/></svg></div><div class="tc-num">02</div><div class="tc-title">ComfortPro</div><p class="tc-desc">1.5× faster by measuring during inflation. Gentle and quiet — no long uncomfortable compression.</p></div>
-    <div class="tc rv d2"><div class="tc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6M9 12h6M9 15h4"/></svg></div><div class="tc-num">03</div><div class="tc-title">Intelligent Assistant</div><p class="tc-desc">Risk indicators displayed at one press — structured, objective data every time you measure.</p></div>
+    <div class="tc rv"><div class="tc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 12l4-8 4 8 4-12 4 12 4-8"/></svg></div><div class="tc-num">01</div><div class="tc-title">AFibraÂ® SMART</div><p class="tc-desc">Detects atrial fibrillation during cuff inflation â clinically validated, first of its kind for home use.</p></div>
+    <div class="tc rv d1"><div class="tc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4"/></svg></div><div class="tc-num">02</div><div class="tc-title">ComfortPro</div><p class="tc-desc">1.5Ã faster by measuring during inflation. Gentle and quiet â no long uncomfortable compression.</p></div>
+    <div class="tc rv d2"><div class="tc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6M9 12h6M9 15h4"/></svg></div><div class="tc-num">03</div><div class="tc-title">Intelligent Assistant</div><p class="tc-desc">Risk indicators displayed at one press â structured, objective data every time you measure.</p></div>
     <div class="tc rv d1"><div class="tc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 3h18v18H3z"/><path d="M3 9h18M3 15h18M9 3v18M15 3v18"/></svg></div><div class="tc-num">04</div><div class="tc-title">IHB Technology</div><p class="tc-desc">Per-beat detection of irregular heartbeats that standard monitors simply miss.</p></div>
     <div class="tc rv d2"><div class="tc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div><div class="tc-num">05</div><div class="tc-title">AIm Technology</div><p class="tc-desc">AI that analyses your first reading and personalises every subsequent measurement to you.</p></div>
-    <div class="tc rv d3"><div class="tc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><ellipse cx="12" cy="12" rx="10" ry="4"/><path d="M2 12c0 4 4.5 7 10 7s10-3 10-7M2 12c0-4 4.5-7 10-7s10 3 10 7"/></svg></div><div class="tc-num">06</div><div class="tc-title">Mesh Technology</div><p class="tc-desc">Micro-perforated cuff distributes pressure uniformly — no artifacts from movement.</p></div>
+    <div class="tc rv d3"><div class="tc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><ellipse cx="12" cy="12" rx="10" ry="4"/><path d="M2 12c0 4 4.5 7 10 7s10-3 10-7M2 12c0-4 4.5-7 10-7s10 3 10 7"/></svg></div><div class="tc-num">06</div><div class="tc-title">Mesh Technology</div><p class="tc-desc">Micro-perforated cuff distributes pressure uniformly â no artifacts from movement.</p></div>
   </div>
 </section>
 
-<!-- ═══ LIVE MONITOR ═══ -->
+<!-- âââ LIVE MONITOR âââ -->
 <section class="monitor-sec" id="monitor">
   <div class="monitor-inner">
     <div>
       <div class="tag rv"><span class="tag-line"></span><span class="tag-txt">Live Monitor Demo</span></div>
       <h2 class="h2 rv d1">See your health<br><em>in real time.</em></h2>
-      <p class="lead rv d2" style="margin-bottom:2rem">Every Prolife device streams live data to its display — heart rate, blood pressure, AFib status and oxygen saturation at a glance.</p>
+      <p class="lead rv d2" style="margin-bottom:2rem">Every Prolife device streams live data to its display â heart rate, blood pressure, AFib status and oxygen saturation at a glance.</p>
       <div style="display:flex;flex-direction:column;gap:.6rem;margin-top:2rem">
         <div class="rv d2" style="display:flex;align-items:center;gap:.65rem">
           <div style="width:7px;height:7px;background:var(--red);border-radius:50%;flex-shrink:0"></div>
-          <span style="font-size:.85rem;color:var(--mid)">Heart rate adapts naturally between <strong style="color:var(--ink)">65–75 bpm</strong></span>
+          <span style="font-size:.85rem;color:var(--mid)">Heart rate adapts naturally between <strong style="color:var(--ink)">65â75 bpm</strong></span>
         </div>
         <div class="rv d3" style="display:flex;align-items:center;gap:.65rem">
           <div style="width:7px;height:7px;background:var(--green);border-radius:50%;flex-shrink:0"></div>
@@ -1493,10 +1499,10 @@ footer {
           <div class="mv"><div class="mv-lbl">Heart Rate</div><div class="mv-val r" id="bpm-disp">70</div><div class="mv-unit">bpm</div></div>
           <div class="mv"><div class="mv-lbl">Pressure</div><div class="mv-val a">118/76</div><div class="mv-unit">mmHg</div></div>
           <div class="mv"><div class="mv-lbl">AFib</div><div class="mv-val g">Clear</div><div class="mv-unit">status</div></div>
-          <div class="mv"><div class="mv-lbl">SpO₂</div><div class="mv-val b">98%</div><div class="mv-unit">oxygen</div></div>
+          <div class="mv"><div class="mv-lbl">SpOâ</div><div class="mv-val b">98%</div><div class="mv-unit">oxygen</div></div>
         </div>
         <div class="mc-ecg">
-          <div class="mc-ecg-lbl">ECG · Live Feed</div>
+          <div class="mc-ecg-lbl">ECG Â· Live Feed</div>
           <canvas id="ecgc" height="48"></canvas>
         </div>
       </div>
@@ -1504,13 +1510,13 @@ footer {
   </div>
 </section>
 
-<!-- ═══ INITIATIVE ═══ -->
+<!-- âââ INITIATIVE âââ -->
 <section class="init-sec" id="initiative">
   <div class="init-inner">
     <div>
       <div class="tag rv"><span class="tag-line"></span><span class="tag-txt">Global Initiative</span></div>
       <h2 class="h2 rv d1">A global effort<br>to prevent <em>stroke.</em></h2>
-      <p class="lead rv d2" style="margin-bottom:2.5rem">Our Tools for Doctors programme runs a worldwide screening campaign — equipping physicians and patients to detect atrial fibrillation years before a stroke occurs.</p>
+      <p class="lead rv d2" style="margin-bottom:2.5rem">Our Tools for Doctors programme runs a worldwide screening campaign â equipping physicians and patients to detect atrial fibrillation years before a stroke occurs.</p>
       <a href="https://www.prolife-health.com/about-us/" target="_blank" class="btn-white rv d3" style="display:inline-flex">
         Learn more
         <svg width="13" height="13" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 8h10M8 3l5 5-5 5"/></svg>
@@ -1528,7 +1534,7 @@ footer {
   </div>
 </section>
 
-<!-- ═══ FOOTER ═══ -->
+<!-- âââ FOOTER âââ -->
 <footer id="contact">
   <div class="ft">
     <div class="ft-brand">
@@ -1536,14 +1542,14 @@ footer {
         <div class="nav-cross"><svg viewBox="0 0 14 14" fill="none"><path d="M7 1v12M1 7h12" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></div>
         <span class="ft-logo-name">Prolife</span>
       </a>
-      <p class="ft-desc">Smart medical devices engineered in Switzerland — technology in service of life.</p>
+      <p class="ft-desc">Smart medical devices engineered in Switzerland â technology in service of life.</p>
     </div>
     <div><span class="ft-title">Products</span><ul class="ft-links"><li><a href="#">Blood Pressure Monitors</a></li><li><a href="#">Nebulizers</a></li><li><a href="#">Thermometers</a></li></ul></div>
-    <div><span class="ft-title">Technologies</span><ul class="ft-links"><li><a href="#">AFibra® SMART</a></li><li><a href="#">ComfortPro</a></li><li><a href="#">IHB Technology</a></li><li><a href="#">AIm Technology</a></li></ul></div>
+    <div><span class="ft-title">Technologies</span><ul class="ft-links"><li><a href="#">AFibraÂ® SMART</a></li><li><a href="#">ComfortPro</a></li><li><a href="#">IHB Technology</a></li><li><a href="#">AIm Technology</a></li></ul></div>
     <div><span class="ft-title">Company</span><ul class="ft-links"><li><a href="#">About Us</a></li><li><a href="#">News</a></li><li><a href="#">Tools for Doctors</a></li><li><a href="https://www.prolife-health.com/extranet/" target="_blank">Extranet</a></li><li><a href="#">Privacy Policy</a></li></ul></div>
   </div>
   <div class="ft-bottom">
-    <span class="ft-copy">© 2026 Prolife-Health.com — All rights reserved</span>
+    <span class="ft-copy">Â© 2026 Prolife-Health.com â All rights reserved</span>
     <div class="ft-swiss"><div class="swiss">+</div>Made in Switzerland</div>
   </div>
 </footer>
@@ -1556,20 +1562,20 @@ footer {
 <canvas id="hc" style="position:absolute;width:1px;height:1px;opacity:0"></canvas>
 
 <script>
-/* ── NAV scrolled ── */
+/* ââ NAV scrolled ââ */
 window.addEventListener('scroll', () => {
   document.getElementById('nav').style.background =
     scrollY > 50 ? 'rgba(247,244,239,.97)' : 'rgba(247,244,239,.88)';
 });
 
-/* ── REVEAL ── */
+/* ââ REVEAL ââ */
 const robs = new IntersectionObserver(
   es => es.forEach(e => { if (e.isIntersecting) e.target.classList.add('on'); }),
   { threshold: .07 }
 );
 document.querySelectorAll('.rv').forEach(el => robs.observe(el));
 
-/* ── PRODUCT TABS ── */
+/* ââ PRODUCT TABS ââ */
 function showProd(idx, btn) {
   document.querySelectorAll('.prod-card').forEach((c,i) => {
     c.classList.toggle('active', i === idx);
@@ -1578,8 +1584,8 @@ function showProd(idx, btn) {
   if (btn) btn.classList.add('on');
 }
 
-/* ── GALLERY ZOOM ── */
-/* ── GALLERY ── */
+/* ââ GALLERY ZOOM ââ */
+/* ââ GALLERY ââ */
 const galItems = [
   {type:'img',   label:'PX7 Premium',   src:'https://www.prolife-health.com/public/images/products-list/BPM/prolife-products-pade-px7-premium.jpg'},
   {type:'video', label:'Product Video', src:'https://www.prolife-health.com/public/images/videos/video-01.mp4', poster:'https://www.prolife-health.com/public/images/products-list/BPM/px7-lifestyle-in-interior-23-(square-crop).jpg'},
@@ -1646,7 +1652,7 @@ document.addEventListener('keydown', e => {
   if (e.key === 'ArrowRight') { galStep(1);  if (open) galZoom(galCur); }
 });
 
-/* ── ECG LIVE ── */
+/* ââ ECG LIVE ââ */
 const ecgc = document.getElementById('ecgc');
 const ec = ecgc.getContext('2d');
 
@@ -1714,7 +1720,7 @@ function frame() {
 }
 frame();
 
-/* ── ABOUT STRIP ── */
+/* ââ ABOUT STRIP ââ */
 (function () {
   const strip = document.getElementById('astrip');
   if (!strip) return;
